@@ -55,3 +55,4 @@ aws ecr delete-repository --repository-name <ecr_repo_name> --force --profile <a
 - [BuildX](https://docs.docker.com/reference/cli/docker/buildx/)
 - [Terraform AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 - [Terraform Archive](https://registry.terraform.io/providers/hashicorp/archive/latest/docs)
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/)
