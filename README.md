@@ -57,3 +57,5 @@ aws ecr delete-repository --repository-name <ecr_repo_name> --force --profile <a
 - [Terraform Archive](https://registry.terraform.io/providers/hashicorp/archive/latest/docs)
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/)
 - [SpaceX](https://github.com/r-spacex/SpaceX-API/blob/master/docs/launches/v5/latest.md)
+- [Non Base Image AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/python-image.html#python-image-clients)
+- [ECR Permission](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html)
