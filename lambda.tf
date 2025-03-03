@@ -1,7 +1,7 @@
 resource "aws_lambda_function" "zip" {
   function_name    = "spacex-latest-zip"
   role             = aws_iam_role.zip.arn
-  runtime          = "python3.9"
+  runtime          = "python3.12"
   handler          = "main.lambda_handler"
   filename         = "spacex-latest.zip"
   source_code_hash = data.archive_file.zip.output_base64sha256

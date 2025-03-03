@@ -40,7 +40,7 @@ aws ecr get-login-password --profile <aws_profile> --region <aws_region> | docke
 
 ```bash
 # build tag and push image to ecr
-docker buildx build --platform linux/amd64 --provenance=false -t <ecr_repo_url>:<image_tag> --push .
+docker buildx build --platform linux/arm64 --provenance=false -t <ecr_repo_url>:<image_tag> --push .
 ```
 
 #### Delete S3 and ECR
@@ -56,3 +56,4 @@ aws ecr delete-repository --repository-name <ecr_repo_name> --force --profile <a
 - [Terraform AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 - [Terraform Archive](https://registry.terraform.io/providers/hashicorp/archive/latest/docs)
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/)
+- [SpaceX](https://github.com/r-spacex/SpaceX-API/blob/master/docs/launches/v5/latest.md)

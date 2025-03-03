@@ -71,25 +71,3 @@ resource "aws_iam_role_policy_attachment" "docker_cw" {
   role       = aws_iam_role.docker.name
   policy_arn = aws_iam_policy.docker_cw.arn
 }
-
-# resource "aws_iam_policy" "docker_ecr" {
-#   name = "spacex-docker-ecr-policy"
-#   policy = jsonencode({
-#     Version = "2012-10-17"
-#     Statement = [
-#       {
-#         Action = [
-#           "ecr:BatchGetImage",
-#           "ecr:GetDownloadUrlForLayer"
-#         ]
-#         Effect   = "Allow"
-#         Resource = "arn:aws:ecr:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:repository/spacex-latest"
-#       }
-#     ]
-#   })
-# }
-
-# resource "aws_iam_role_policy_attachment" "docker_ecr" {
-#   role       = aws_iam_role.docker.name
-#   policy_arn = aws_iam_policy.docker_ecr.arn
-# }
